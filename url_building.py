@@ -22,6 +22,7 @@ def age(a):
     return "Your age is %d"%a
 
 @app.route("/fname/<s>")
+
 def fname(s):
     return "your first name is %s" % s
 
