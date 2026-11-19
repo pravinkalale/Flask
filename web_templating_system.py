@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "this is home page"
+    return render_template("home1.html")
 
 @app.route("/tes1/<int:n>")
 def tes1(n):
@@ -16,7 +16,7 @@ def tes2(name):
 @app.route("/tes3")
 def tes3():
     stu_list=[11,"hii",True,45.7]
-    return render_template("task.html",list=stu_list)
+    return render_template("tes3.html",list=stu_list)
 
 @app.route("/tes4")
 def tes4():
